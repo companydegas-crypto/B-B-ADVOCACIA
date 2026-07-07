@@ -5,6 +5,7 @@ import { useReveal } from '../utils/useReveal';
 import heroHome from '../assets/hero_home.png';
 import taxDocs from '../assets/tax-docs.png';
 import prevImg from '../assets/aposentadoria.png';
+import logoImg from '../assets/logo.jpg';
 import '../styles/components.css';
 
 export default function Home() {
@@ -24,15 +25,18 @@ export default function Home() {
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(7,7,7,0.98) 0%, rgba(7,7,7,0.85) 50%, rgba(7,7,7,0.4) 100%)', zIndex: 0 }}></div>
         <div className="container hero__container" style={{ position: 'relative', zIndex: 1, padding: '64px 22px' }}>
           <div className="hero__content" style={{ maxWidth: '700px' }}>
-            <span className="hero__eyebrow" style={{ color: 'var(--color-gold-main)' }}>Biffe & Barzagui Advocacia</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '24px' }}>
+              <img src={logoImg} alt="B&B Advocacia" style={{ height: '48px' }} />
+              <span style={{ color: 'var(--color-gold-main)', fontFamily: 'var(--font-title)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Advocacia e Consultoria</span>
+            </div>
             <h1 className="hero__headline" style={{ fontSize: 'clamp(40px, 5vw, 64px)', lineHeight: '1.1' }}>
-              Um escritório para decisões que não podem ser tomadas no escuro.
+              Decisões seguras para o seu negócio e aposentadoria.
             </h1>
             <p className="hero__subheadline" style={{ fontSize: '18px', color: 'var(--color-gray-text)', marginBottom: '40px' }}>
-              Atuação técnica e direta em Direito Tributário e Previdenciário. Porque a maioria das pessoas e empresas só descobre o erro quando já perdeu dinheiro ou direitos.
+              Não espere perder dinheiro ou direitos para buscar um advogado. Atuação técnica, direta e sem juridiquês.
             </p>
             <div className="hero__actions">
-              <Link to="/contato" className="btn-primary" style={{ padding: '16px 32px', fontSize: '16px' }}>Solicitar análise inicial gratuita</Link>
+              <Link to="/contato" className="btn-primary" style={{ padding: '16px 32px', fontSize: '16px' }}>Falar com Advogado</Link>
             </div>
           </div>
         </div>
@@ -43,7 +47,7 @@ export default function Home() {
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '48px' }}>
             <span className="section-eyebrow">Áreas de atuação</span>
-            <h2 className="section-title" style={{ margin: '0 auto' }}>Qual é o seu desafio?</h2>
+            <h2 className="section-title" style={{ margin: '0 auto' }}>Nossas áreas de especialização.</h2>
           </div>
 
           <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
@@ -57,7 +61,7 @@ export default function Home() {
                   Cobranças indevidas, impostos pagos a mais, execução fiscal e enquadramento errado. Estancamos o prejuízo e organizamos o passivo.
                 </p>
                 <span style={{ color: 'var(--color-gold-dark)', fontFamily: 'var(--font-ui)', textTransform: 'uppercase', letterSpacing: '0.04em', fontSize: '14px', display: 'inline-flex', alignItems: 'center', gap: '8px', fontWeight: '600' }}>
-                  Conheça as soluções <ArrowRight size={16} />
+                  Sofre com isso? Nós resolvemos. <ArrowRight size={16} />
                 </span>
               </div>
             </Link>
@@ -71,7 +75,7 @@ export default function Home() {
                   Benefício negado, cálculo errado, pensão por morte e trabalho rural. Analisamos seu caso antes de pedir para garantir o benefício certo.
                 </p>
                 <span style={{ color: 'var(--color-gold-dark)', fontFamily: 'var(--font-ui)', textTransform: 'uppercase', letterSpacing: '0.04em', fontSize: '14px', display: 'inline-flex', alignItems: 'center', gap: '8px', fontWeight: '600' }}>
-                  Conheça as soluções <ArrowRight size={16} />
+                  Sofre com isso? Nós resolvemos. <ArrowRight size={16} />
                 </span>
               </div>
             </Link>
@@ -84,7 +88,7 @@ export default function Home() {
       <section className="section section--accent">
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '64px' }}>
-            <h2 className="section-title" style={{ margin: '0 auto' }}>Existimos para resolver o seu problema. Com técnica.</h2>
+            <h2 className="section-title" style={{ margin: '0 auto' }}>Por que nos escolher?</h2>
           </div>
 
           <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
@@ -137,7 +141,7 @@ export default function Home() {
           <p className="section-text" style={{ maxWidth: '500px', margin: '0 auto 32px' }}>
             Apresente o seu caso para a nossa equipe e receba uma orientação inicial sem compromisso.
           </p>
-          <Link to="/contato" className="btn-primary" style={{ padding: '16px 32px', fontSize: '16px' }}>Solicitar análise inicial gratuita</Link>
+          <Link to="/contato" className="btn-primary" style={{ padding: '16px 32px', fontSize: '16px' }}>Falar com Advogado</Link>
         </div>
       </section>
     </div>
