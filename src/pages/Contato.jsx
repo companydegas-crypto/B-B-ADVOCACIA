@@ -74,7 +74,12 @@ export default function Contato() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="telefone">WhatsApp</label>
-                  <input type="tel" id="telefone" placeholder="(00) 00000-0000" required />
+                  <input type="tel" id="telefone" placeholder="(00) 00000-0000" required maxLength="15" onChange={(e) => {
+                    let v = e.target.value.replace(/\D/g, "");
+                    v = v.replace(/^(\d{2})(\d)/g, "($1) $2");
+                    v = v.replace(/(\d)(\d{4})$/, "$1-$2");
+                    e.target.value = v;
+                  }} />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">E-mail</label>
