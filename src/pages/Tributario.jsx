@@ -46,7 +46,7 @@ export default function Tributario() {
       <section className="section" id="situacoes" style={{ paddingTop: '64px', backgroundColor: 'var(--color-black-main)' }}>
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <h2 className="section-title">O que tira o sono da sua empresa?</h2>
+            <h2 className="section-title" style={{ margin: '0 auto', maxWidth: 'none' }}>Situações que resolvemos</h2>
           </div>
           
           <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
@@ -78,7 +78,7 @@ export default function Tributario() {
           <div className="reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '64px', alignItems: 'center' }}>
             <div>
               <div className="gold-line" style={{ backgroundColor: 'var(--color-gold-dark)' }}></div>
-              <h2 className="section-title">O risco tributário é silencioso.</h2>
+              <h2 className="section-title" style={{ maxWidth: 'none' }}>O risco tributário é silencioso.</h2>
               <p className="section-text" style={{ fontSize: '18px', color: 'var(--color-text-light-bg)' }}>
                 A maioria dos empresários não sabe quanto perde por ano por falta de análise fiscal. Um erro no enquadramento ou o pagamento de um tributo indevido sangram o caixa da empresa todos os meses.
               </p>
@@ -96,7 +96,7 @@ export default function Tributario() {
 
       <section className="cta-final" style={{ background: 'linear-gradient(165deg, #0a0a0a 0%, #12100d 50%, #0a0a0a 100%)' }}>
         <div className="container reveal" style={{ textAlign: 'center' }}>
-          <h2 className="section-title" style={{ maxWidth: '600px', margin: '0 auto 24px' }}>Cada mês sem análise é um mês pagando mais do que deveria.</h2>
+          <h2 className="section-title" style={{ maxWidth: '600px', margin: '0 auto 24px' }}>Cada mês sem análise é dinheiro perdido.</h2>
           <p className="section-text" style={{ maxWidth: '500px', margin: '0 auto 32px' }}>
             Conte a situação da sua empresa. O escritório avalia se existe algo a ser feito — e mostra por onde começar.
           </p>

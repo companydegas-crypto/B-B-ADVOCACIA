@@ -30,10 +30,10 @@ export default function Home() {
               <span style={{ color: 'var(--color-gold-main)', fontFamily: 'var(--font-title)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Advocacia e Consultoria</span>
             </div>
             <h1 className="hero__headline" style={{ fontSize: 'clamp(40px, 5vw, 64px)', lineHeight: '1.1' }}>
-              Decisões seguras para o seu negócio e aposentadoria.
+              O escritório que protege o que é seu.
             </h1>
             <p className="hero__subheadline" style={{ fontSize: '18px', color: 'var(--color-gray-text)', marginBottom: '40px' }}>
-              Não espere perder dinheiro ou direitos para buscar um advogado. Atuação técnica, direta e sem juridiquês.
+              A maioria das pessoas só descobre que perdeu dinheiro ou direitos quando já é tarde. A gente entra antes disso acontecer.
             </p>
             <div className="hero__actions">
               <Link to="/contato" className="btn-primary" style={{ padding: '16px 32px', fontSize: '16px' }}>Falar com Advogado</Link>
@@ -88,7 +88,7 @@ export default function Home() {
       <section className="section section--accent">
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '64px' }}>
-            <h2 className="section-title" style={{ margin: '0 auto' }}>Por que nos escolher?</h2>
+            <h2 className="section-title" style={{ margin: '0 auto', maxWidth: 'none' }}>Por que nos escolher?</h2>
           </div>
 
           <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
@@ -112,7 +112,7 @@ export default function Home() {
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '48px' }}>
             <span className="section-eyebrow">O escritório</span>
-            <h2 className="section-title">Profissionais dedicados ao seu caso.</h2>
+            <h2 className="section-title" style={{ margin: '0 auto' }}>Profissionais dedicados ao seu caso.</h2>
           </div>
           
           <div className="reveal-stagger team__cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>

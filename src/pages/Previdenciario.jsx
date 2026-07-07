@@ -44,7 +44,7 @@ export default function Previdenciario() {
       <section className="section" id="situacoes" style={{ paddingTop: '64px', backgroundColor: 'var(--color-black-main)' }}>
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <h2 className="section-title">O que aconteceu com você?</h2>
+            <h2 className="section-title" style={{ margin: '0 auto', maxWidth: 'none' }}>Situações que resolvemos</h2>
           </div>
           
           <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
@@ -74,7 +74,7 @@ export default function Previdenciario() {
         <div className="container">
           <div className="reveal" style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
             <div className="gold-line" style={{ backgroundColor: 'var(--color-gold-dark)', margin: '0 auto 24px' }}></div>
-            <h2 className="section-title">Anos de trabalho não aparecem na tela do INSS.</h2>
+            <h2 className="section-title" style={{ maxWidth: 'none' }}>Anos de trabalho não aparecem na tela do INSS.</h2>
             <p className="section-text" style={{ fontSize: '18px', lineHeight: '1.5', color: 'var(--color-text-light-bg)' }}>
               O INSS faz a conta apenas com o que está no sistema deles. Se faltar alguma coisa, você recebe menos pelo resto da vida. E voltar atrás depois é muito mais difícil.
             </p>
