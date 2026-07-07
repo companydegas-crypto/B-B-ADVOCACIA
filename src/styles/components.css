@@ -63,6 +63,19 @@
 .section { padding: var(--space-80) 0; }
 .section-eyebrow { color: var(--color-gold-main); font-family: var(--font-ui); text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; font-weight: 500; display: block; margin-bottom: var(--space-16); }
 .section-title { font-size: 32px; line-height: 1.1; margin-bottom: var(--space-24); color: var(--color-off-white); max-width: 25ch; }
+[style*="text-align: center"] .section-title,
+[style*="text-align:center"] .section-title,
+.cta-final .section-title {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+}
+[style*="text-align: center"] .section-eyebrow,
+[style*="text-align:center"] .section-eyebrow {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+}
 .section-text { font-size: 16px; color: var(--color-gray-text); max-width: 600px; margin-bottom: var(--space-32); }
 
 /* Team */
