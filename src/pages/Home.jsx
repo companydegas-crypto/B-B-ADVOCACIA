@@ -30,10 +30,10 @@ export default function Home() {
               <span style={{ color: 'var(--color-gold-main)', fontFamily: 'var(--font-title)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Advocacia e Consultoria</span>
             </div>
             <h1 className="hero__headline" style={{ fontSize: 'clamp(40px, 5vw, 64px)', lineHeight: '1.1' }}>
-              O escritório que protege o que é seu.
+              A segurança técnica que seu patrimônio e seu futuro exigem.
             </h1>
             <p className="hero__subheadline" style={{ fontSize: '18px', color: 'var(--color-gray-text)', marginBottom: '40px' }}>
-              A maioria das pessoas só descobre que perdeu dinheiro ou direitos quando já é tarde. A gente entra antes disso acontecer.
+              Orientação jurídica estratégica para decisões de alto impacto financeiro e previdenciário.
             </p>
             <div className="hero__actions">
               <Link to="/contato" className="btn-primary" style={{ padding: '16px 32px', fontSize: '16px' }}>Falar com Advogado</Link>
