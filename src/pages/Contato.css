@@ -1,0 +1,104 @@
+/* src/pages/Contato.css */
+.contato__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-64);
+  align-items: start;
+}
+
+.contato__form-wrapper {
+  background-color: var(--color-graphite);
+  padding: var(--space-32);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-graphite-light);
+}
+
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.form-group label {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--color-off-white);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background-color: var(--color-black-main);
+  border: 1px solid var(--color-graphite-light);
+  color: var(--color-off-white);
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold-main);
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-gray-text);
+}
+
+.contato__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.contato__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-16);
+}
+
+.contato__info-icon {
+  color: var(--color-gold-main);
+  flex-shrink: 0;
+}
+
+.contato__info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contato__info-item strong {
+  color: var(--color-off-white);
+  font-weight: 500;
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 13px;
+}
+
+.contato__info-item span {
+  color: var(--color-gray-text);
+  font-size: 15px;
+}
+
+@media (min-width: 1024px) {
+  .contato__grid {
+    grid-template-columns: 3fr 2fr;
+    gap: var(--space-80);
+  }
+}

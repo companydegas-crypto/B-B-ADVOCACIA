@@ -1,0 +1,76 @@
+body {
+  background-color: var(--color-black-main);
+  color: var(--color-text-dark-bg);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  color: var(--color-text-dark-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-gold-dark);
+  color: var(--color-black-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-main);
+  outline-offset: 2px;
+}
+
+/* Section light — inverte cores de headings e parágrafos */
+.section--light h1,
+.section--light h2,
+.section--light h3,
+.section--light h4,
+.section--light h5,
+.section--light h6 {
+  color: var(--color-text-light-bg);
+}
+
+.section--light p {
+  color: var(--color-text-light-bg-sec);
+}
+
+.section--light .faq__question {
+  color: var(--color-text-light-bg);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.section--light .faq__answer p {
+  color: var(--color-text-light-bg-sec);
+}
+
+.section--light .faq__item {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

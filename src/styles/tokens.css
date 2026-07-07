@@ -1,0 +1,56 @@
+:root {
+  /* Colors */
+  --color-black-main: #101010;
+  --color-black-deep: #070707;
+  --color-graphite: #1A1A1A;
+  --color-graphite-light: #2A2A2A;
+  
+  --color-off-white: #F6F3EC;
+  --color-gray-warm: #DDD7CB;
+  --color-gray-text: #AFAAA1;
+  
+  --color-gold-main: #D4AF37;
+  --color-gold-dark: #AA8C2C;
+  --color-gold-light: #EBD58A;
+  --color-gold-subtle: rgba(212, 175, 55, 0.22);
+  
+  --color-text-dark-bg: #F6F3EC;
+  --color-text-dark-bg-sec: #BDB7AD;
+  --color-text-light-bg: #161616;
+  --color-text-light-bg-sec: #5F5A52;
+  
+  /* Tipografia */
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-ui: 'DM Sans', sans-serif;
+  
+  /* Spacing */
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-128: 128px;
+  
+  /* Layout */
+  --nav-height-mobile: 72px;
+  --nav-height-desktop: 88px;
+  
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 14px;
+  
+  /* Transitions */
+  --transition-smooth: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-fast: 300ms ease;
+  
+  /* Breakpoints */
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --container-max: 1280px;
+}
