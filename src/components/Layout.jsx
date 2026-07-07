@@ -13,7 +13,11 @@ export default function Layout() {
   }, [isOpen]);
 
   useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'auto';
     window.scrollTo(0, 0);
+    setTimeout(() => {
+      document.documentElement.style.scrollBehavior = 'smooth';
+    }, 0);
   }, [location.pathname]);
 
   return (
