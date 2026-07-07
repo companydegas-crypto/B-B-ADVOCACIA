@@ -5,7 +5,7 @@ import { useReveal } from '../utils/useReveal';
 import heroHome from '../assets/hero_home.png';
 import taxDocs from '../assets/tax-docs.png';
 import prevImg from '../assets/aposentadoria.png';
-import logoImg from '../assets/logo.jpg';
+import logoImg from '../assets/logo.png';
 import '../styles/components.css';
 
 export default function Home() {
